@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/grey"
+
+    android:layout_margin="8dp"
+    app:cardCornerRadius="4dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/RVImageNews" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/newsHeading"
+            android:text="News Heading"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:maxLines="2"
+            android:layout_margin="3dp"
+            android:layout_below="@id/RVImageNews"
+            android:textColor="@color/yellow"
+            android:padding="3dp"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="News subTitle"
+            android:id="@+id/subheading"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:maxLines="3"
+            android:layout_margin="3dp"
+            android:layout_below="@id/newsHeading"
+            android:textColor="@color/white"
+            android:padding="3dp"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
